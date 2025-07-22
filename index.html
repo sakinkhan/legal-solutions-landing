@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="flex items-center justify-between mt-8 mx-[280px]">
+        <nav class="flex items-center justify-between mt-8 mx-auto w-[1170px]">
             <a href="index.html">
                 <div class="logo flex items-center justify-start gap-4">
                     <i class="fa-solid fa-gavel text-[#B68C5A] text-3xl"></i>
@@ -25,14 +25,27 @@
                 </div>
             </a>
             <ul class="flex items-center justify-center gap-8 text-[#707070] text-base">
-                <li><a href="">Home</a></li>
-                <li><a href="">Services ></a></li>
-                <li><a href="">Cases ></a></li>
-                <li><a href="">Blog ></a></li>
-                <li><a href="">Contact Us ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="" >Home</a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Services ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Cases ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Blog ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Contact Us ></a></li>
             </ul>
             <button class="text-white bg-[#B68C5A] font-semibold px-7 py-4 rounded-[8px] hover:bg-[#414040]">Free Consultation</button>
         </nav>
     </header>
+    <main>
+        <!-- Banner -->
+        <div class="banner py-23 w-[1170px] rounded-[8px] mx-auto my-12.5 bg-[url(../images/banner.png)] bg-center bg-cover">
+            <h1 class="eb-garamond-font font-extrabold text-white text-[72px] text-center">We Provide Effective <br> Legal Solutions</h1>
+            <p class="text-center text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+            <div class="search-form flex items-center justify-center gap-6 mt-8">
+                <input type="text" name="service-search" id="service-search" placeholder="Search your services" class="text-[#A0A0A0] py-5 pr-[314px] pl-5 rounded-[8px] bg-white">
+                <button type="submit" class="font-semibold text-white text-[20px] bg-[#B68C5A] px-10 py-4 rounded-[8px] hover:bg-[#414040]">Search</button>
+            </div>
+        </div>
+
+
+    </main>
 </body>
 </html>
