@@ -17,35 +17,146 @@
 </head>
 <body>
     <header>
-        <nav class="flex items-center justify-between mt-8 mx-auto w-[1170px]">
+        <nav class="mt-8 mx-auto flex flex-col items-center
+                    lg:flex-row lg:items-center lg:justify-between lg:w-[1170px]">
             <a href="index.html">
-                <div class="logo flex items-center justify-start gap-4">
-                    <i class="fa-solid fa-gavel text-[#B68C5A] text-3xl"></i>
-                    <p class="eb-garamond-font text-[35px] font-extrabold text-[#414040]">Justice</p>
-                </div>
+                <img src="./images/logo2.png" alt="justice logo" class="w-[158.62px] h-[46px] items-center justify-center mx-auto hover:scale-[1.05] duration-300">
             </a>
-            <ul class="flex items-center justify-center gap-8 text-[#707070] text-base">
-                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="" >Home</a></li>
-                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Services ></a></li>
-                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Cases ></a></li>
-                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Blog ></a></li>
-                <li class="hover:scale-[1.2] hover:text-black hover:font-bold"><a href="">Contact Us ></a></li>
+            <ul class="text-[#707070] text-base text-center my-6
+            md:flex md:items-center md:justify-center md:gap-4 
+            lg:flex lg:items-center lg:justify-center lg:gap-8 ">
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold duration-300"><a href="" >Home</a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold duration-300"><a href="">Services ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold duration-300"><a href="">Cases ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold duration-300"><a href="">Blog ></a></li>
+                <li class="hover:scale-[1.2] hover:text-black hover:font-bold duration-300"><a href="">Contact Us ></a></li>
             </ul>
-            <button class="text-white bg-[#B68C5A] font-semibold px-7 py-4 rounded-[8px] hover:bg-[#414040]">Free Consultation</button>
+            <div class="free-consultation-btn">
+                <button class="text-white bg-[#B68C5A] font-semibold px-7 py-4 rounded-[8px] hover:bg-[#414040] duration-300">
+                Free Consultation
+            </button>
+            </div>
         </nav>
     </header>
     <main>
         <!-- Banner -->
-        <div class="banner py-23 w-[1170px] rounded-[8px] mx-auto my-12.5 bg-[url(../images/banner.png)] bg-center bg-cover">
-            <h1 class="eb-garamond-font font-extrabold text-white text-[72px] text-center">We Provide Effective <br> Legal Solutions</h1>
-            <p class="text-center text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
-            <div class="search-form flex items-center justify-center gap-6 mt-8">
-                <input type="text" name="service-search" id="service-search" placeholder="Search your services" class="text-[#A0A0A0] py-5 pr-[314px] pl-5 rounded-[8px] bg-white">
-                <button type="submit" class="font-semibold text-white text-[20px] bg-[#B68C5A] px-10 py-4 rounded-[8px] hover:bg-[#414040]">Search</button>
+        <div class="banner py-23 rounded-[8px] mx-auto my-12.5 bg-[url(../images/banner.png)] bg-center bg-cover z-1 w-[100%]
+                    lg:w-[1170px]">
+            <div class="gradient-bg mx-auto my-12.5 bg-linear-to-t from-[#111111] to-[#111111]/0 z-2 w-[100%]
+                        lg:w-[1170px]">
+                <p class="eb-garamond-font font-extrabold text-white text-5xl lg:text-[72px] text-center mb-6">
+                    We Provide Effective <br> 
+                    Legal Solutions
+                </p>
+                <p class="text-center text-[#E7E7E7] w-3xs mx-auto md:w-[600px] lg:w-2xl">
+                    There are many variations of passages of Lorem Ipsum available, but the majority <br> 
+                    have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="search-form flex items-center justify-center gap-2 lg:gap-6 mt-8">
+                    <input type="text" name="service-search" id="service-search" placeholder="Search your services" 
+                    class="text-[#A0A0A0] py-5 pl-5 pr-7 rounded-[8px] bg-white
+                            lg:pr-[314px]">
+                    <button type="submit" class="font-semibold text-white text-[20px] bg-[#B68C5A] px-5 lg:px-10 py-4 rounded-[8px] hover:bg-[#414040] duration-300">Search</button>
+                </div>
             </div>
         </div>
-
-
+        <!-- Legal Practice Area -->
+        <div class="collapse practice-area">
+            <p class="eb-garamond-font font-extrabold text-[40px] text-[#414040] text-center">
+                The Legal Practice Area
+            </p>
+            <p class="text-[#707070] text-center">
+                There are many variations of passages of Lorem Ipsum available, but the majority have <br>
+                suffered alteration in some form, by injected humour.
+            </p>
+            <div class="cards grid grid-cols-3 items-center justify-center gap-0 mt-16 w-[1170px] mx-auto">
+                <div class="card1 border-r border-b border-[#E7E7E7] w-[390px] h-[499px] hover:bg-linear-to-b from-[#F3F3F3] to-[#F3F3F3]/0">
+                    <img src="./images/business.png" alt="business law" class="mx-auto pt-14">
+                    <p class="eb-garamond-font font-extrabold text-[32px] text-[#414040] text-center mt-8 mb-6">
+                        Business Law
+                    </p>
+                    <p class="text-[#707070] text-center">
+                        There are many variations of <br>
+                        passages of Lorem Ipsum <br>
+                        available, but the majority have <br>
+                        suffered alteration in some <br>
+                        form, by injected humour.
+                    </p>
+                    <img src="./images/Frame.png" alt="right arrow" class="mx-auto mt-8 pb-[72px] hover:scale-[1.15]">
+                </div>
+                <div class="card2 border-l border-r border-b border-[#E7E7E7] w-[390px] h-[499px] hover:bg-linear-to-b from-[#F3F3F3] to-[#F3F3F3]/0">
+                    <img src="./images/criminal.png" alt="Criminal Law" class="mx-auto pt-14">
+                    <p class="eb-garamond-font font-extrabold text-[32px] text-[#414040] text-center mt-8 mb-6">
+                        Criminal Law
+                    </p>
+                    <p class="text-[#707070] text-center">
+                        There are many variations of <br>
+                        passages of Lorem Ipsum <br>
+                        available, but the majority have <br>
+                        suffered alteration in some <br>
+                        form, by injected humour.
+                    </p>
+                    <img src="./images/Frame.png" alt="right arrow" class="mx-auto mt-8 pb-[72px] hover:scale-[1.15]">
+                </div>
+                <div class="card3 border-b border-l border-[#E7E7E7] w-[390px] h-[499px] hover:bg-linear-to-b from-[#F3F3F3] to-[#F3F3F3]/0">
+                    <img src="./images/child.png" alt="business law" class="mx-auto pt-14">
+                    <p class="eb-garamond-font font-extrabold text-[32px] text-[#414040] text-center mt-8 mb-6">
+                        Child Support
+                    </p>
+                    <p class="text-[#707070] text-center">
+                        There are many variations of <br>
+                        passages of Lorem Ipsum <br>
+                        available, but the majority have <br>
+                        suffered alteration in some <br>
+                        form, by injected humour.
+                    </p>
+                    <img src="./images/Frame.png" alt="right arrow" class="mx-auto mt-8 pb-[72px] hover:scale-[1.15]">
+                </div>
+                <div class="card4 border-r border-t border-[#E7E7E7] w-[390px] h-[499px] hover:bg-linear-to-b from-[#F3F3F3] to-[#F3F3F3]/0">
+                    <img src="./images/education.png" alt="Education law" class="mx-auto pt-14">
+                    <p class="eb-garamond-font font-extrabold text-[32px] text-[#414040] text-center mt-8 mb-6">
+                        Education Law
+                    </p>
+                    <p class="text-[#707070] text-center">
+                        There are many variations of <br>
+                        passages of Lorem Ipsum <br>
+                        available, but the majority have <br>
+                        suffered alteration in some <br>
+                        form, by injected humour.
+                    </p>
+                    <img src="./images/Frame.png" alt="right arrow" class="mx-auto mt-8 pb-[72px] hover:scale-[1.15]">
+                </div>
+                <div class="card5 border-t border-l border-r border-[#E7E7E7] w-[390px] h-[499px] hover:bg-linear-to-b from-[#F3F3F3] to-[#F3F3F3]/0">
+                    <img src="./images/divorce.png" alt="Divorce Law" class="mx-auto pt-14">
+                    <p class="eb-garamond-font font-extrabold text-[32px] text-[#414040] text-center mt-8 mb-6">
+                        Divorce Law
+                    </p>
+                    <p class="text-[#707070] text-center">
+                        There are many variations of <br>
+                        passages of Lorem Ipsum <br>
+                        available, but the majority have <br>
+                        suffered alteration in some <br>
+                        form, by injected humour.
+                    </p>
+                    <img src="./images/Frame.png" alt="right arrow" class="mx-auto mt-8 pb-[72px] hover:scale-[1.15]">
+                </div>
+                <div class="card6 border-l border-t border-[#E7E7E7] w-[390px] h-[499px] hover:bg-linear-to-b from-[#F3F3F3] to-[#F3F3F3]/0">
+                    <img src="./images/tax.png" alt="Tax Law" class="mx-auto pt-14">
+                    <p class="eb-garamond-font font-extrabold text-[32px] text-[#414040] text-center mt-8 mb-6">
+                        Tax Law
+                    </p>
+                    <p class="text-[#707070] text-center">
+                        There are many variations of <br>
+                        passages of Lorem Ipsum <br>
+                        available, but the majority have <br>
+                        suffered alteration in some <br>
+                        form, by injected humour.
+                    </p>
+                    <img src="./images/Frame.png" alt="right arrow" class="mx-auto mt-8 pb-[72px] hover:scale-[1.15]">
+                </div>
+            </div>
+        </div>
     </main>
+
 </body>
 </html>
